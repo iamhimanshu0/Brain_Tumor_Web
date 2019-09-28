@@ -1,0 +1,68 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+        <p class="text-justify lead">In this i tried to predict <b>Brain Tumor</b> and i'm able to get over <b>93% accuracy.</b> With the large dataset we can improve it's prediction and able to get more accuracy which can help <b>Patient</b> and <b>Doctors.</b></p>
+        <p class="text-justify lead">If you want to learn more about how I make this check out my
+            <a href="https://medium.com/@iamhimanshutripathi0/brain-tumor-classification-transfer-learning-e04f84f96443"><b>Medium Article</b></a></p>
+        <p class="lead text-justify">Artificial intelligence (AI) in healthcare is the use of complex algorithms and software to estimate human cognition in the analysis of complicated medical data. Specifically, AI is the ability for computer algorithms to approximate conclusions without direct human input.
+
+        What distinguishes AI technology from traditional technologies in health care is the ability to gain information, process it and give a well-defined output to the end-user. AI does this through machine learning algorithms. These algorithms can recognize patterns in behavior and create its own logic. In order to reduce the margin of error, AI algorithms need to be tested repeatedly. AI algorithms behave differently from humans in two ways: (1) algorithms are literal: if you set a goal, the algorithm can't adjust itself and only understand what it has been told explicitly, (2) and algorithms are black boxes; algorithms can predict extremely precise information</p>
+       
+        </div>
+        <div class="col-sm-6">
+         <center>    
+            <form id="upload-file" method="post" enctype="multipart/form-data">
+                <label for="imageUpload" class="upload-label">
+                    Choose...
+                </label>
+                <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+            </form>
+        
+        
+            <div class="image-section" style="display:none;">
+                <div class="img-preview">
+                    <div id="imagePreview">
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+                </div>
+            </div>
+        
+            <div class="loader" style="display:none;"></div>
+        
+        <h3 id="result">
+            <span> </span>
+        </h3>
+    </center>
+        </div>
+        </div>
+
+    
+</div>
+
+
+<!-- footer -->
+<footer>
+    <div class="container">
+    <center><h3>Get In Touch</h3></center>
+    <hr>
+        <div class="text-center center-block">
+                <a href="https://www.facebook.com/iamhimanshu0"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/iam_himanshu0"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://www.linkedin.com/in/iamhimanshu0/"><i id="social-gp" class="fa fa-linkedin-square fa-3x social"></i></a>
+                <a href="https://instagram.com/iamhimanshu0/"><i id="social-gp" class="fa fa-instagram fa-3x social"></i></a>
+                <a href="https://github.com/iamhimanshu0"><i id="social-gp" class="fa fa-github-square fa-3x social"></i></a>
+                <a href="mailto:himanshutripathi16.ht@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                <hr>
+                <p>© 2019, Himanshu Tripathi All right reserved.</p>
+    </div>
+
+
+</footer>
+
+<br>
+<!-- footer -->
+{% endblock %}
