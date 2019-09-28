@@ -71,7 +71,7 @@ def upload():
         return prediction
         
 
-    return None
+#     return None
 
 
 if __name__ == '__main__':
