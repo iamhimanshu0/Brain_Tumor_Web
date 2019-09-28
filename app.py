@@ -5,6 +5,7 @@ import os
 import glob
 import re
 import numpy as np
+from PIL import Image
 
 # Keras
 import tensorflow as tf
